@@ -1,0 +1,39 @@
+// import java.util.Scanner();
+import java.util.Scanner;
+
+public class taiking
+{
+    public static void main(String[] args) 
+  {
+       Scanner scanner = new Scanner(System.in);
+    System.out.print("What is your name?: ");
+    String name = scanner.nextLine();
+    
+    System.out.println("Hello " +name+ " your order number is 9");
+    System.out.println("Select what do you want menu:Pizza, Burger, dosa "+ "");
+    
+    String food = scanner.nextLine();
+  
+    if (food.equals("Burger"))
+        {
+       
+        System.out.println("Here you go, a fine burger "+ name) ;
+    }
+    else if (food.equals("Pizza"))
+        {
+        System.out.println("Here is Cheesy pizza for you "+ name);
+        }
+    else if (food.equals("dosa")) 
+        {
+                
+        System.out.print("Here is a hot dosa for you "+ name);
+        }
+       else         
+        System.out.print("Not Matched: "+food);
+       System.out.println("do you want any sidedish.");
+       System.out.println("menu:chees,kchup,maow");
+        String sidedish = scanner.nextLine();
+        System.out.println("you want" +sidedish+ "for your sidedish");
+        
+  }
+}
